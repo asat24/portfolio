@@ -1,0 +1,124 @@
+/* Global Styles */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Header Styles */
+
+header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #00bfff;
+}
+
+/* Main Content Styles */
+
+main {
+  padding: 80px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+/* Project Styles */
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.project img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.project p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+/* Add transparency to the header and footer */
+
+header, footer {
+    background-color: rgba(255, 255, 255, 0.9); /* 90% opaque white */
+  }
+  
+  /* Add a parallel scope to the main content */
+  
+  main {
+    display: flex; /* Enable flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  section {
+    max-width: 1200px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+  
+  /* Add a transparent overlay to images */
+  
+  .project img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    /* Add the following styles for transparency */
+    filter: brightness(80%) contrast(80%);
+    -webkit-filter: brightness(80%) contrast(80%);
+  }
